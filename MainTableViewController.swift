@@ -10,6 +10,7 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
+    @IBOutlet weak var busy: UIActivityIndicatorView!
     var Items:[Item] = []
     
     override func viewDidLoad() {
@@ -18,12 +19,14 @@ class MainTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        busy.startAnimating()
         let sessionHandler = FruitAPI()
         sessionHandler.fetch(completion: APIfetchCompletion)
     }
     
     func APIfetchCompletion(items: [Item]) -> Void {
         Items = items
+        busy.stopAnimating()
         tableView.reloadData()
     }
 

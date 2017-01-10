@@ -17,6 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="gjs-TT-DSE">
+                            <rect key="frame" x="0.0" y="72" width="375" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="Wyh-kh-Ul1" style="IBUITableViewCellStyleDefault" id="9Ox-Dc-Sqd">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -42,6 +46,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="JSON Place Hoders" id="1HN-8Z-3jV"/>
+                    <connections>
+                        <outlet property="busy" destination="gjs-TT-DSE" id="W4L-s7-Bxd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSu-Ln-b6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
