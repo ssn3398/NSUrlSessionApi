@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Fruits-->
+        <!--JSON Place Hoders-->
         <scene sceneID="48f-2Q-xpT">
             <objects>
                 <tableViewController id="TJb-MH-dxU" customClass="MainTableViewController" customModule="NSUrlSessionApi" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,7 +41,7 @@
                             <outlet property="delegate" destination="TJb-MH-dxU" id="GZ2-oN-jZN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fruits" id="1HN-8Z-3jV"/>
+                    <navigationItem key="navigationItem" title="JSON Place Hoders" id="1HN-8Z-3jV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TSu-Ln-b6v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

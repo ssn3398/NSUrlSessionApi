@@ -10,11 +10,21 @@ import UIKit
 
 class MainTableViewController: UITableViewController {
 
-    var Items = ["apple","banana","orange"]
+    var Items:[Item] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let sessionHandler = FruitAPI()
+        sessionHandler.fetch(completion: APIfetchCompletion)
+    }
+    
+    func APIfetchCompletion(items: [Item]) -> Void {
+        Items = items
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,7 +46,7 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = Items[indexPath.row]
+        cell.textLabel?.text = Items[indexPath.row].title
         
         return cell
     }

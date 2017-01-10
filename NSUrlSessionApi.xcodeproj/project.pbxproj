@@ -12,6 +12,8 @@
 		63A886631E23E01700029884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A886621E23E01700029884 /* Assets.xcassets */; };
 		63A886661E23E01700029884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A886641E23E01700029884 /* LaunchScreen.storyboard */; };
 		63A8866F1E23E29C00029884 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8866E1E23E29C00029884 /* MainTableViewController.swift */; };
+		63A886721E23EBBC00029884 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A886711E23EBBC00029884 /* URLSession.swift */; };
+		63A886751E24471400029884 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A886741E24471400029884 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		63A886651E23E01700029884 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A886671E23E01700029884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A8866E1E23E29C00029884 /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		63A886711E23EBBC00029884 /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		63A886741E24471400029884 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		63A8864F1E23E01600029884 = {
 			isa = PBXGroup;
 			children = (
+				63A886731E2446F900029884 /* Models */,
+				63A886701E23EB8100029884 /* API */,
 				63A8866D1E23E27600029884 /* ViewControllers */,
 				63A8865A1E23E01600029884 /* NSUrlSessionApi */,
 				63A886591E23E01600029884 /* Products */,
@@ -70,6 +76,22 @@
 				63A8866E1E23E29C00029884 /* MainTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63A886701E23EB8100029884 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				63A886711E23EBBC00029884 /* URLSession.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		63A886731E2446F900029884 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63A886741E24471400029884 /* Item.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63A886751E24471400029884 /* Item.swift in Sources */,
 				63A8866F1E23E29C00029884 /* MainTableViewController.swift in Sources */,
 				63A8865C1E23E01700029884 /* AppDelegate.swift in Sources */,
+				63A886721E23EBBC00029884 /* URLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
